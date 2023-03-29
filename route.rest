@@ -1,0 +1,29 @@
+GET http://localhost:3000/housing
+
+###
+
+GET http://localhost:3000/housing/6424261a95daf09270980759
+
+###
+
+POST http://localhost:3000/housing
+Content-Type: application/json
+
+{
+    "title": "Another amazing room",
+    "description": "Best room ever"
+}
+
+###
+
+DELETE http://localhost:3000/housing/6424261a95daf09270980759
+
+###
+
+PATCH http://localhost:3000/housing/64243dcd78dc1b31504b7e0e
+Content-Type: application/json
+
+{
+    "title": "New amazing room",
+    "description": "Best room ever"
+}
