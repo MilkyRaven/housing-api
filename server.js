@@ -16,5 +16,5 @@ app.use(express.json())
 const housingRoutes = require('./routes/housing')
 app.use('/housing', housingRoutes)
 
-app.listen(3000, () => console.log('Server just started!'))
+app.listen(4000, () => console.log('Server just started!'))
 

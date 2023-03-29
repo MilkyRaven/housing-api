@@ -4,9 +4,9 @@ const House = require('../models/house')
 
 // getting all
 router.get('/', async (req, res) => {
-    res.send('Hello World')
     try {
         const houses = await House.find()
+        res.send(houses)
     } catch (error) {
         res.status(500).json({ message: error.message })
     }
